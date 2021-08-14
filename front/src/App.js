@@ -1,6 +1,44 @@
 import './App.css'
+import SkillBar from 'react-skillbars';
 import Typewriter from 'typewriter-effect';
 function App() {
+  const SKILLS = [
+    {
+      "type": "Java",
+      "level": 100
+    },
+    {
+      "type": "React",
+      "level": 85
+    },
+    {
+      "type": "Javascript",
+      "level": 75
+    },
+    {
+      "type": "Spring",
+      "level": 50
+    },
+    {
+      "type": "Docker",
+      "level": 25
+    },
+    {
+      "type": "HTML",
+      "level": 20
+    },
+    {
+      "type": "NoSQL",
+      "level": 0
+    }
+  ]
+  const colors = {
+    "bar": "black",
+    "title": {
+      "text": "#fff",
+      "background": "black"
+    }
+  }
   return (
     <div className="App">
 
@@ -47,6 +85,8 @@ function App() {
           loop: true,
         }}
       />
+      <br />
+      <SkillBar skills={SKILLS} colors={colors} height={21}></SkillBar>
     </div>
   );
 }

@@ -1,7 +1,9 @@
 body{
     text-align: center;
+    font-size: 21px;
     
 }
+
 
 .menu{
     display: inline-flex;
@@ -14,10 +16,10 @@ button {
     width: 180px;
     /*  when i change it to % it doesent work on other buttns */
     height: 50px;
-    font-size: 21px;
+    font-size: 21px !important;
     /* color: white; */
     transition: all ease 0.8s;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid white ;
     border-top: none;
     border-left: none;
     border-right: none;

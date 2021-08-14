@@ -3,33 +3,20 @@ import SkillBar from 'react-skillbars';
 import Typewriter from 'typewriter-effect';
 function App() {
   const SKILLS = [
-    {
-      "type": "Java",
-      "level": 100
-    },
-    {
-      "type": "React",
-      "level": 85
-    },
+
     {
       "type": "Javascript",
-      "level": 75
-    },
-    {
-      "type": "Spring",
       "level": 50
     },
+    {"type": "Nodejs", "level": 30
+  },
     {
       "type": "Docker",
       "level": 25
     },
     {
-      "type": "HTML",
-      "level": 20
-    },
-    {
       "type": "NoSQL",
-      "level": 0
+      "level": 12
     }
   ]
   const colors = {
@@ -78,15 +65,18 @@ function App() {
       {/* <header style={{width:"100%" ,height: "100% "}}>
       </header> */}
       <br />
-      <Typewriter className="type"
+            <Typewriter className="type" 
         options={{
-          strings: ['Hello World From Hamide Alaeeee'],
+          strings: ['Hello World From Hamide Alaeeee','Hamideh is a software engineer and full-stack web developer using node.js in back-end and angular, react in front-end ','and it is nice to meet you.' ],
           autoStart: true,
-          loop: true,
+          loop: false,
         }}
       />
       <br />
-      <SkillBar skills={SKILLS} colors={colors} height={21}></SkillBar>
+      <hr style={{height : "3px"}} />
+      <h1>Ma Skills</h1>
+      <SkillBar skills={SKILLS} colors={colors} height={23}></SkillBar>
+      
     </div>
   );
 }

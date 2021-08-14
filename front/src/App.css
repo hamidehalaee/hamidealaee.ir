@@ -1,3 +1,5 @@
+* {box-sizing:border-box}
+
 body{
     text-align: center;
     font-size: 21px;
@@ -96,6 +98,3 @@ button:hover {
 .dropdown:hover .dropdown-contact {
     display: block;
 }
-/* .type{
-    font-size: 21px; 
-} */
